@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class VetorTeste {
     public static void main(String[] args) {
         Aluno a1 = new Aluno("João");
@@ -27,5 +29,15 @@ public class VetorTeste {
 
         lista.remove(3);
         System.out.println(lista);
+
+        for(int i = 0; i < 300; i++){
+            Aluno y = new Aluno ("João " + i);
+            lista.adiciona(y);
+        }
+
+        System.out.println(lista);
+
+        ArrayList<Aluno> listaDoJava = new ArrayList<Aluno>();
+
     }
 }
